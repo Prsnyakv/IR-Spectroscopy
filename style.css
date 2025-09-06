@@ -1,0 +1,213 @@
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	margin: 0px;
+	}
+	p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	}
+	.not-found {
+	color: red;
+	}
+	:root {
+	--assigment-color: #0084ff;
+	}
+	.follow-item {
+	margin-left: 20px;
+	}
+	.range-output2 {
+	color: var(--assigment-color);
+	margin-left: 20px;
+	}
+	.highlight {
+	color: var(--assigment-color);
+	margin-left: 0px;
+	}
+	.highlight2 {
+	color: var(--assigment-color);
+	margin-left: 20px;
+	}
+	.alert {
+	color: red;
+	margin-left: 0px;
+	}
+	.wavelenght {
+	font-size: 24px;
+	margin: 50px 0;
+	font-weight: bold;
+	}
+	.container {
+	width: 70%;
+	margin: auto;
+	border: 0px solid #ccc;
+	box-sizing: border-box;
+	}
+	.version-container {
+	width: 100%;
+	border: 0px solid #ccc;
+	margin: auto;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	box-sizing: border-box;
+	max-height: 0;
+	transition: max-height 0.05s ease;
+	}
+	.textarea-container {
+	width: 100%;
+	margin: auto;
+	font-family: inherit;
+	font-size: 20px;
+	position: relative; /* для позиционирования кнопки */
+	font-family: Arial, sans-serif;
+	}
+	input[type="text"] {
+	width: 90%;
+	padding: 10px;
+	font-size: 16px;
+	margin-bottom: 0px;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+	}
+	textarea {
+	width: 100%;
+	min-height: 30px;
+	}
+	.instruction-container {
+	width: 100%;
+	border: 0px solid #ccc;
+	margin: auto;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	box-sizing: border-box;
+	max-height: 0;
+	overflow: hidden; /* visible */
+	transition: max-height 0.05s ease;
+	box-sizing: border-box;
+	}
+	.instruction-container.open {
+	max-height: none;
+	}
+	.toggle-link {
+	cursor: pointer;
+	text-decoration: none;
+	color: var(--assigment-color);
+	text-decoration: underline;
+	}
+	.toggle-link h2 {
+	margin: 0;
+	display: inline-block; /* чтобы underline применялся корректно */
+	border-bottom: 1px dotted;
+	padding-bottom: 0px; /* отступ до текста */
+	text-decoration: none; /* убрать стандартное подчёркивание */
+	margin: 0; /* убираем отступы */
+	font-size: 18px;
+	}
+	.clear-btn {
+	cursor: pointer;
+	font-weight: bold;
+	background: none;
+	border: none;
+	outline: none;
+	padding: 10;
+	user-select: none;
+	}
+	ol {
+	list-style: none;
+	counter-reset: li;
+	margin: 0;
+	padding-left: 1.6em;
+	max-width: 100%;
+	box-sizing: border-box;
+	}
+	li {
+	position: relative;
+	margin-bottom: 0.5em;
+	white-space: normal;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	}
+	li:before {
+	counter-increment: li;
+	content: counters(li, ".") ". ";
+	margin-left: -12pt;
+	margin-right: 0pt;
+	font-weight: bold;
+	}
+	/* li:before {
+	counter-increment: li;
+	content: counters(li, ".") ".";
+	position: absolute;
+	left: 0; /* начало нумерации */
+	/* top: 0;
+	width: 30px; /* ширина блока с цифрой */
+	/* text-align: right; /* цифры выравниваем по правому краю */
+	/* font-weight: bold;
+	/* "Свешивание" достигается отрицательным margin-left */
+	/* margin-left: -30px; /* свешиваем цифры влево за padding */
+	/*} */
+	h1 {
+	font-family: Arial, sans-serif;
+	}
+	h3 {
+	margin-bottom: 0pt;
+	}
+	.output-container {
+	width: 90%;
+	border-radius: 10px;
+	background-color: #ffffff;
+	padding: 10px;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+	}
+	.follow-header {
+	font-weight: bold;
+	margin-top: 16px;
+	margin-bottom: 8px;
+	}
+	.follow-item {
+	margin-bottom: 8px;
+	line-height: 1.0;
+	padding-left: 20px;
+	}
+	.gallery {
+	display: flex;
+	flex-wrap: wrap; /* Добавлено для переноса на новую строку */
+	gap: 20px;
+	margin-top: 0px;
+	margin-bottom: 50px;
+	transition: opacity 0.3s, max-height 0.3s;
+	}
+	.gallery figure {
+	margin: 0;
+	text-align: center;
+	width: 200px; /* Фиксированная ширина */
+	}
+	.gallery img {
+	width: 200px; /* Фиксированная ширина изображений */
+	height: auto;
+	display: block;
+	}
+	.gallery.hidden {
+	opacity: 0;
+	max-height: 0;
+	overflow: hidden;
+	}
+	.gallery-text {
+	padding: 10px;
+	margin-right: 60%;
+	background: #ffffff;
+	border-radius: 5px;
+	}
+	/* Стили кнопки */
+	.toggle-btn {
+	padding: 2px 2px;
+	background: white;
+	color: rgb(92, 92, 92);
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	}
+	.toggle-btn:hover {
+	background: #0084ff2c;
+	}
